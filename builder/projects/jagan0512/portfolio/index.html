@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><base href="http://localhost/snapsite/builder/projects/jagan0512/portfolio/">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Portfolio</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<header>
+  <h1>My Portfolio</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I am a passionate creator and developer. Welcome to my portfolio website where you can see some of my projects.</p>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="gallery">
+      <figure>
+        <img src="https://images.unsplash.com/photo-1506765515384-028b60a970df?auto=format&fit=crop&w=400&q=80" alt="Project 1">
+        <figcaption>Project 1: Web Design</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=400&q=80" alt="Project 2">
+        <figcaption>Project 2: Photography</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Project 3">
+        <figcaption>Project 3: App Development</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Project 4">
+        <figcaption>Project 4: Branding</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" autocomplete="off">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+      <button type="submit">Send</button>
+      <p id="formMessage" class="hidden"></p>
+    </form>
+  </section>
+</main>
+<footer>
+  <p>© 2024 My Portfolio</p>
+</footer>
+<script src='script.js'></script>
+</body>
+</html>

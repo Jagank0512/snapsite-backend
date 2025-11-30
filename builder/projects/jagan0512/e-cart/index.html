@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><base href="http://localhost/snapsite/builder/projects/jagan0512/e-cart/">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>E-Commerce Store</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<header>
+  <h1>My E-Commerce Store</h1>
+  <nav>
+    <ul>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#" id="cart-button">Cart (<span id="cart-count">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section id="products" class="products-grid">
+    <!-- Products will be dynamically inserted here -->
+  </section>
+</main>
+
+<div id="cart-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-button" id="close-cart">&times;</span>
+    <h2>Your Shopping Cart</h2>
+    <div id="cart-items"></div>
+    <div id="cart-total"></div>
+    <button id="checkout-btn" disabled>Checkout</button>
+  </div>
+</div>
+
+<script src='script.js'></script>
+</body>
+</html>

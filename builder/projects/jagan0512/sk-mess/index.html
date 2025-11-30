@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Restaurant</title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo animated-text">Savory Bites</h1>
+      <nav class="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#menu" class="nav-link">Menu</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2 class="headline">Taste The Difference</h2>
+      <p class="subhead">Fresh Ingredients. Creative Flavors. Unforgettable Experience.</p>
+      <a href="#menu" class="btn btn-primary">Explore Menu</a>
+    </div>
+    <div class="hero-image-wrapper">
+      <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80" alt="Delicious food" class="hero-image zoom-animate" />
+    </div>
+  </section>
+
+  <section id="about" class="about-section container">
+    <h2 class="section-title">About Us</h2>
+    <p class="about-text">At <strong>Savory Bites</strong>, we take pride in crafting mouth-watering dishes using the freshest ingredients. Our chefs blend tradition with innovation to deliver a dining experience that is both comforting and exciting.</p>
+  </section>
+
+  <section id="menu" class="menu-section container">
+    <h2 class="section-title">Our Menu</h2>
+    <div class="menu-grid">
+      <div class="menu-item card-animate">
+        <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb46?auto=format&fit=crop&w=500&q=60" alt="Grilled Steak" />
+        <h3>Grilled Steak</h3>
+        <p>Perfectly grilled prime beef with garlic butter and fresh herbs.</p>
+        <span class="price">$29.99</span>
+      </div>
+      <div class="menu-item card-animate delay-1">
+        <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=500&q=60" alt="Seafood Pasta" />
+        <h3>Seafood Pasta</h3>
+        <p>Mixed seafood tossed in rich tomato and garlic sauce over linguine.</p>
+        <span class="price">$24.50</span>
+      </div>
+      <div class="menu-item card-animate delay-2">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=60" alt="Vegan Salad Bowl" />
+        <h3>Vegan Salad Bowl</h3>
+        <p>Fresh greens with quinoa, avocado, nuts, and vinaigrette dressing.</p>
+        <span class="price">$18.00</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery-section">
+    <h2 class="section-title container">Gallery</h2>
+    <div class="gallery-grid container">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=70" alt="Vegan Salad" class="gallery-item scale-on-hover" />
+      <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb46?auto=format&fit=crop&w=400&q=70" alt="Steak" class="gallery-item scale-on-hover" />
+      <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?auto=format&fit=crop&w=400&q=70" alt="Seafood Pasta" class="gallery-item scale-on-hover" />
+      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=400&q=70" alt="Dessert" class="gallery-item scale-on-hover" />
+      <img src="https://images.unsplash.com/photo-1543352624-51b5e44f7a0d?auto=format&fit=crop&w=400&q=70" alt="Cocktail" class="gallery-item scale-on-hover" />
+      <img src="https://images.unsplash.com/photo-1505253210344-705ca0c65cbe?auto=format&fit=crop&w=400&q=70" alt="Restaurant Interior" class="gallery-item scale-on-hover" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact-section container">
+    <h2 class="section-title">Contact Us</h2>
+    <form class="contact-form" id="contactForm" novalidate>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Your email" />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" required placeholder="Your message"></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+      <p class="form-message" id="formMessage" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2024 Savory Bites. All rights reserved.</p>
+  </footer>
+
+  <script src='script.js'></script>
+</body>
+</html>

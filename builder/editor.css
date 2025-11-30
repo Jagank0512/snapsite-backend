@@ -1,0 +1,262 @@
+/* ===========================================
+   GLOBAL RESET
+=========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #20e0ff, #2b7bff);
+}
+
+/* ===========================================
+   TOP BAR
+=========================================== */
+.topbar {
+    width: 100%;
+    height: 70px;
+    padding: 0 20px;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(15px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(255,255,255,0.45);
+}
+
+.left-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.top-logo {
+    width: 52px;
+    height: 42px;
+}
+
+.editor-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+}
+
+/* ---- Top Controls ---- */
+.top-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+/* View toggles */
+.view-btn {
+    padding: 6px 12px;
+    border: none;
+    background: #e7f1ff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.view-btn:hover {
+    background: #d0e4ff;
+}
+
+/* Main functional buttons */
+.action-btn {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.save { background: #005eff; }
+.down { background: #963efe; }
+.pub  { background: #00b859; }
+
+.exit-btn {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    background: #ff3b3b;
+    color: white;
+    cursor: pointer;
+}
+
+.exit-btn:hover {
+    background: #d60000;
+}
+
+/* ===========================================
+   MAIN EDITOR LAYOUT
+=========================================== */
+.editor-body {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+}
+
+/* ===========================================
+   LEFT PANEL — AI CHAT
+=========================================== */
+.left-panel {
+    width: 30%;
+    height: 100%;
+    background: rgba(255,255,255,0.3);
+    backdrop-filter: blur(12px);
+    border-right: 2px solid rgba(255,255,255,0.45);
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* CHAT HISTORY AREA */
+.chat-box {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Scrollbar styling */
+.chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-box::-webkit-scrollbar-thumb {
+    background: #7aa7ff;
+    border-radius: 10px;
+}
+
+/* MESSAGE BASE STYLE */
+.msg {
+    max-width: 85%;
+    padding: 12px 16px;
+    border-radius: 14px;
+    line-height: 1.4;
+    font-size: 15px;
+}
+
+/* USER BUBBLE (Purple) */
+.user-msg {
+    align-self: flex-start;
+    background: #6a36ff;
+    color: white;
+    border-bottom-left-radius: 3px;
+}
+
+/* AI BUBBLE (White) */
+.ai-msg {
+    align-self: flex-start;
+    background: #ffffff;
+    color: #000;
+    border-bottom-left-radius: 3px;
+    border: 2px solid rgba(0,0,0,0.15);
+}
+
+/* INPUT BAR */
+.ai-input-row {
+    height: 55px;
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.ai-input-row input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    background: white;
+    font-size: 15px;
+}
+
+.send-btn {
+    width: 55px;
+    border-radius: 12px;
+    border: none;
+    background: #4b00ff;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background: #3800c4;
+}
+
+/* ===========================================
+   RIGHT PANEL — PREVIEW
+=========================================== */
+.right-panel {
+    width: 70%;
+    height: 100%;
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.preview-frame {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.20);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+/* IFRAME */
+#previewFrame {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+}
+
+/* ===========================================
+   RESPONSIVE MODES
+=========================================== */
+#previewFrame.tablet {
+    width: 800px !important;
+}
+
+#previewFrame.mobile {
+    width: 420px !important;
+}

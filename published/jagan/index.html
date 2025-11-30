@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><base href="http://localhost/snapsite/builder/projects/jagan0512/jagan/">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Portfolio</title>
+<link rel='stylesheet' href='style.css'>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+<section id="hero">
+  <div class="hero-content">
+    <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
+    <p>Creative Developer | Problem Solver | Tech Enthusiast</p>
+    <a href="#projects" class="btn-primary">View My Work</a>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=400&q=80" alt="Hero Image"/>
+  </div>
+</section>
+
+<section id="about" class="section-wrapper">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-content">
+    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Profile Picture" class="profile-pic"/>
+    <div class="about-text">
+      <p>I'm a passionate developer with experience in crafting elegant web solutions. I love turning ideas into reality using code and design, and I'm always exploring new technologies to level up my skills.</p>
+      <p>When I'm not coding, I enjoy photography, traveling, and coffee.</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section-wrapper">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Project 1" />
+      <div class="project-info">
+        <h3>Project One</h3>
+        <p>A sleek e-commerce website with smooth animations and fast performance.</p>
+        <a href="#" class="btn-secondary" target="_blank" rel="noopener">View Project</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=400&q=80" alt="Project 2" />
+      <div class="project-info">
+        <h3>Project Two</h3>
+        <p>Custom blog platform built with React and Node.js featuring a clean UI.</p>
+        <a href="#" class="btn-secondary" target="_blank" rel="noopener">View Project</a>
+      </div>
+    </div>
+    <div class="project-card">
+      <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=400&q=80" alt="Project 3" />
+      <div class="project-info">
+        <h3>Project Three</h3>
+        <p>Responsive personal finance dashboard with data visualizations and charts.</p>
+        <a href="#" class="btn-secondary" target="_blank" rel="noopener">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section-wrapper">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-list">
+    <div class="skill-item">
+      <h4>HTML5</h4>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 95%;"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <h4>CSS3 & Sass</h4>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 90%;"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <h4>JavaScript</h4>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 85%;"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <h4>React</h4>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 80%;"></div>
+      </div>
+    </div>
+    <div class="skill-item">
+      <h4>Node.js</h4>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 75%;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section-wrapper">
+  <h2 class="section-title">Contact Me</h2>
+  <form class="contact-form" id="contactForm" novalidate>
+    <div class="form-group">
+      <label for="name">Name<span class="required">*</span>:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <small class="error-msg" aria-live="polite"></small>
+    </div>
+    <div class="form-group">
+      <label for="email">Email<span class="required">*</span>:</label>
+      <input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+      <small class="error-msg" aria-live="polite"></small>
+    </div>
+    <div class="form-group">
+      <label for="message">Message<span class="required">*</span>:</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+      <small class="error-msg" aria-live="polite"></small>
+    </div>
+    <button type="submit" class="btn-primary">Send Message</button>
+    <div id="formMessage" role="alert" class="form-feedback"></div>
+  </form>
+</section>
+
+<footer>
+  <p>© 2024 Your Name. All rights reserved.</p>
+  <div class="social-links">
+    <a href="https://github.com/yourprofile" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" class="icon"><path d="M12 0a12 12 0 00-3.794 23.396c.6.11.82-.258.82-.577v-2.042c-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.332-1.754-1.332-1.754-1.09-.745.083-.73.083-.73 1.205.085 1.84 1.238 1.84 1.238 1.07 1.833 2.807 1.303 3.492.996.108-.774.42-1.303.763-1.603-2.666-.305-5.467-1.334-5.467-5.933 0-1.31.468-2.38 1.236-3.22-.124-.303-.536-1.527.117-3.176 0 0 1.01-.324 3.31 1.23a11.485 11.485 0 016.02 0c2.298-1.554 3.307-1.23 3.307-1.23.654 1.65.242 2.874.118 3.176.77.84 1.236 1.91 1.236 3.22 0 4.61-2.807 5.625-5.48 5.922.43.37.814 1.102.814 2.222v3.293c0 .32.218.694.824.576A12.004 12.004 0 0012 0z"></path></svg></a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" class="icon"><path d="M4.983 3.5c0 1.381-1.114 2.5-2.49 2.5S0 4.881 0 3.5 1.112 1 2.493 1s2.49 1.119 2.49 2.5zM.4 8.92h4.36v12.58H.4V8.92zM8.317 8.92h4.17v1.708h.06c.58-1.1 2-2.26 4.12-2.26 4.41 0 5.23 2.9 5.23 6.67v7.46h-4.353v-6.63c0-1.58-.028-3.6-2.19-3.6-2.192 0-2.53 1.715-2.53 3.49v6.74H8.317V8.92z"></path></svg></a>
+    <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="currentColor" class="icon"><path d="M23.954 4.57a10.03 10.03 0 01-2.825.775 4.925 4.925 0 002.164-2.724 9.98 9.98 0 01-3.127 1.195 4.92 4.92 0 00-8.38 4.49A13.95 13.95 0 011.67 3.15a4.902 4.902 0 001.523 6.573 4.9 4.9 0 01-2.23-.616v.06a4.926 4.926 0 003.946 4.827 4.996 4.996 0 01-2.224.084 4.924 4.924 0 004.604 3.417A9.867 9.867 0 010 19.54a13.9 13.9 0 007.548 2.208c9.142 0 14.307-7.721 13.995-14.646a9.936 9.936 0 002.411-2.548l-.001-.002z"></path></svg></a>
+  </div>
+</footer>
+
+<script src='script.js'></script>
+</body>
+</html>

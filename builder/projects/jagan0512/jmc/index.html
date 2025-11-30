@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><base href="http://localhost/snapsite/builder/projects/jagan0512/jmc/">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hello, I'm John Doe</h1>
+      <p>Software Developer | Web Enthusiast | Problem Solver</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="section-container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="https://via.placeholder.com/250" alt="John Doe" />
+      <div>
+        <p>
+          I am a passionate software developer with 5 years of experience in web development. 
+          I love crafting beautiful and performant websites and apps.
+        </p>
+        <p>
+          Skilled in JavaScript, React, Node.js, and more. Always eager to learn new technologies 
+          and improve my skills.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section-container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>A web app that tracks personal expenses with intuitive UI and charts.</p>
+        <a href="https://github.com/username/project-one" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>A real-time chat application built using WebSocket and React.</p>
+        <a href="https://github.com/username/project-two" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Three</h3>
+        <p>An e-commerce website with custom CMS and payment integration.</p>
+        <a href="https://github.com/username/project-three" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section-container">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>JavaScript (ES6+)</li>
+      <li>React & Redux</li>
+      <li>Node.js & Express</li>
+      <li>HTML5 & CSS3 (Flexbox, Grid)</li>
+      <li>Git & GitHub</li>
+      <li>REST APIs</li>
+      <li>SQL & NoSQL Databases</li>
+      <li>Webpack & Babel</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="section-container">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required placeholder="Your email" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Your message"></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <div id="form-response"></div>
+  </section>
+
+  <footer>
+    <p>© 2024 John Doe. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/username" target="_blank" aria-label="GitHub">GitHub</a>
+      <a href="https://linkedin.com/in/username" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+      <a href="mailto:email@example.com" aria-label="Email">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
